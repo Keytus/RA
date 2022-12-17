@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.russianairports.FXFlightsC">
+    <children>
+        <Button layoutX="723.0" layoutY="360.0" mnemonicParsing="false" onAction="#Add1" text="Добавить" />
+        <Button layoutX="603.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="188.0" text="Вернуться к маршрутам" />
+        <TableView fx:id="Tabl1" layoutX="14.0" layoutY="59.0" onMouseClicked="#initialize" prefHeight="290.0" prefWidth="780.0">
+            <columns>
+                <TableColumn fx:id="startColumn" prefWidth="100.7999849319458" text="Start" />
+                <TableColumn fx:id="endColumn" prefWidth="99.19998168945312" text="End" />
+                <TableColumn fx:id="costColumn" minWidth="0.0" prefWidth="109.59999084472656" text="Cost" />
+            <TableColumn fx:id="startTimeColumn" prefWidth="104.0" text="StartTime" />
+            <TableColumn fx:id="endTimeColumn" prefWidth="118.4000244140625" text="EndTime" />
+            <TableColumn fx:id="economFreeColumn" prefWidth="80.79998779296875" text="EconomFree" />
+            <TableColumn fx:id="firstClassFreeColumn" prefWidth="84.79998779296875" text="FirstClassFree" />
+            <TableColumn fx:id="luxuryFreeColumn" prefWidth="85.5999755859375" text="LuxuryFree" />
+            </columns>
+        </TableView>
+        <Text layoutX="14.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Рейсы" wrappingWidth="444.0">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Text>
+      <ComboBox fx:id="classCombo" layoutX="547.0" layoutY="360.0" prefWidth="150.0" />
+      <TextField fx:id="loginW" layoutX="365.0" layoutY="360.0" />
+      <Text fx:id="messageText" layoutX="14.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="342.93671798706055">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

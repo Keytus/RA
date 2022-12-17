@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.russianairports.FXAdminFuncC">
+   <children>
+      <Button layoutX="279.0" layoutY="31.0" mnemonicParsing="false" onAction="#Export" text="Экспортировать" />
+      <ComboBox fx:id="formatBox" layoutX="415.0" layoutY="31.0" onAction="#ChangeFormat" prefWidth="150.0" />
+      <Button layoutX="502.0" layoutY="343.0" mnemonicParsing="false" onAction="#Back" text="Назад" />
+      <ComboBox fx:id="restoreFormat" layoutX="115.0" layoutY="31.0" onAction="#ChangeRestore" prefWidth="150.0" />
+      <Button layoutX="31.0" layoutY="31.0" mnemonicParsing="false" onAction="#Restore" text="Откат" />
+      <DatePicker fx:id="datePicker" layoutX="24.0" layoutY="75.0" />
+      <TextField fx:id="restoreCount" layoutX="24.0" layoutY="113.0" />
+      <Text fx:id="messageText" layoutX="24.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="465.5999755859375">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

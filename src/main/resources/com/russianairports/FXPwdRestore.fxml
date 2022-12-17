@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.russianairports.FXPwdRestoreC">
+   <children>
+      <Button layoutX="463.0" layoutY="347.0" mnemonicParsing="false" onAction="#back" text="Вернуться к логину" />
+      <Text layoutX="25.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логин" wrappingWidth="58.13671875" />
+      <TextField fx:id="logW" layoutX="25.0" layoutY="99.0" />
+      <Text layoutX="25.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Восстановление пароля" wrappingWidth="352.07769775390625">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="25.0" layoutY="346.0" mnemonicParsing="false" onAction="#replacePwd" prefHeight="26.0" prefWidth="130.0" text="Заменить пароль" />
+      <TextField fx:id="pwdNew" layoutX="26.0" layoutY="156.0" />
+      <Text layoutX="26.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Новый пароль" />
+      <Text fx:id="messageText" layoutX="26.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="547.7367553710938">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

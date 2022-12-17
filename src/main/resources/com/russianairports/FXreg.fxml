@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.russianairports.FXregC">
+   <children>
+      <TextField fx:id="logW" layoutX="14.0" layoutY="81.0" onKeyTyped="#loginScan" />
+      <Text layoutX="17.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Регистрация" wrappingWidth="243.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логин" />
+      <Text layoutX="14.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль" />
+      <PasswordField fx:id="PasW1" layoutX="14.0" layoutY="148.0" onKeyTyped="#passw1Scan" />
+      <PasswordField fx:id="PasW2" layoutX="14.0" layoutY="270.0" onKeyTyped="#passw2Scan" />
+      <Text layoutX="14.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Повторите Пароль" />
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#registerMain" prefHeight="25.0" prefWidth="149.0" text="Подтвердить" />
+      <Text layoutX="14.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- введите 8-12 символов" wrappingWidth="176.94140625" />
+      <Text layoutX="14.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- используйте цифры и большие/маленькие буквы" wrappingWidth="133.94140625" />
+      <Text fx:id="log1" layoutX="164.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="148.8" />
+      <Text fx:id="passw1" layoutX="164.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="126.59765625" />
+      <Text fx:id="passw2" layoutX="164.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="126.59765624999989" />
+      <Button layoutX="393.0" layoutY="361.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="193.0" text="Вернуться в основное меню" />
+      <Text layoutX="17.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- введите 8-12 символов" wrappingWidth="201.94140625" />
+      <Text fx:id="RegFinal" layoutX="14.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="370.13671875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="emailW" layoutX="426.0" layoutY="81.0" />
+      <TextField fx:id="pasportW" layoutX="426.0" layoutY="148.0" />
+      <TextField fx:id="fullNameW" layoutX="426.0" layoutY="262.0" />
+      <Text layoutX="463.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Паспортные данные" />
+      <Text layoutX="548.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ФИО" />
+      <Text layoutX="547.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+   </children>
+</AnchorPane>

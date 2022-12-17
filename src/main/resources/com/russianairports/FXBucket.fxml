@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.russianairports.FXBucketC">
+   <children>
+      <Text layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Корзина" wrappingWidth="444.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="370.0" layoutY="367.0" mnemonicParsing="false" onAction="#Add1" text="Оплатить" />
+      <Button layoutX="344.0" layoutY="22.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="227.0" text="Вернуться в пользовательское меню" />
+      <Text fx:id="logT" layoutX="148.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="176.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <TableView fx:id="Tabl1" layoutX="15.0" layoutY="59.0" onMouseClicked="#initialize" prefHeight="298.0" prefWidth="570.0">
+         <columns>
+            <TableColumn fx:id="classColumn" prefWidth="77.60000801086426" text="ServiceClass" />
+            <TableColumn fx:id="costColumn" prefWidth="59.20000457763672" text="cost" />
+            <TableColumn fx:id="startColumn" prefWidth="83.20001220703125" text="Start" />
+            <TableColumn fx:id="endColumn" prefWidth="97.20001220703125" text="End" />
+            <TableColumn fx:id="loginColumn" prefWidth="106.79998779296875" text="Login" />
+            <TableColumn fx:id="startTimeColumn" prefWidth="149.20004272460938" text="StartTime" />
+         </columns>
+      </TableView>
+      <Button layoutX="450.0" layoutY="367.0" mnemonicParsing="false" onAction="#Add2" text="Отказаться от заказа" />
+   </children>
+</AnchorPane>
